@@ -1,3 +1,11 @@
+/*
+
+Write a program, which takes two integer operands and one operator
+as input from the user, performs the operation and then prints the result.
+(Consider the operators +,-,*, /, %. Use switch statement)
+
+ */
+
 fn main() {
     let args: Vec<String> = std::env::args().skip(1).collect();
     let (operand1, operator, operand2): (i32, &str, i32) = match args.as_slice() {
